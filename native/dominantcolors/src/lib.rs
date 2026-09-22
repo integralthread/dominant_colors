@@ -59,4 +59,4 @@ fn dominant_colors(file_name: String) -> Result<Vec<String>, String> {
     Ok(color_codes)
 }
 
-rustler::init!("Elixir.DominantColors", [dominant_colors]);
+rustler::init!("Elixir.DominantColors");

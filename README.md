@@ -12,10 +12,15 @@ Extract dominant colors from given image path. Wrapper around the awesome Rust l
 
 ## Installation
 
+The NIF is compiled locally on `mix compile`, so a Rust toolchain is required
+(`rust = "stable"` in `mise.toml` covers it). No precompiled binaries are
+downloaded.
+
 ```elixir
 def deps do
   [
-    {:dominant_colors, "~> 0.1.4"}
+    {:dominant_colors, path: "../dominant_colors"}
+    # or: {:dominant_colors, git: "git@github.com:integralthread/dominant_colors.git"}
   ]
 end
 ```

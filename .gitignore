@@ -27,8 +27,5 @@ dominant_colors-*.tar
 
 .DS_Store
 
-/priv/native/libdominantcolors.so
-/priv/native/libdominantcolors-*.*
-
-# The checksum files for precompiled NIFs
-checksum-*.exs
+# Locally built NIF (Rustler writes it here on compile).
+/priv/native/

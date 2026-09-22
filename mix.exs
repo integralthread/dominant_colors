@@ -34,7 +34,6 @@ defmodule DominantColors.MixProject do
         "native/dominantcolors/.cargo",
         "native/dominantcolors/src",
         "native/dominantcolors/Cargo*",
-        "checksum-*.exs",
         "mix.exs"
       ],
       name: "dominant_colors",
@@ -46,8 +45,7 @@ defmodule DominantColors.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:rustler, ">= 0.3.0", optional: true},
-      {:rustler_precompiled, "~> 0.7"},
+      {:rustler, "~> 0.37"},
       {:ex_doc, ">= 0.0.0", only: :dev, runtime: false}
     ]
   end
